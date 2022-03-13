@@ -1,7 +1,7 @@
 # e5fc36ece561dac85ab79e696583a744
 
 ## Project URL 
-Project Live Link: https://622e42ae4628f20de56bd503--nifty-goldberg-1ef925.netlify.app/
+Project Live Link: https://622e4b50f6f86b0009fbbdbb--nifty-goldberg-1ef925.netlify.app/
 
 
 ## Tech Stack 
