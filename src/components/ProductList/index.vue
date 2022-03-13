@@ -42,13 +42,12 @@
       </template>
 
       <template v-slot:footer>
-        <v-row align="center" justify="center" class="mx-2">
-          <span class="grey--text">Items per page</span>
+        <v-row align="center" justify="center" class="mx-2 pt-4">
+          <span class="black--text">Items per page</span>
           <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
               <v-btn
                 dark
-                text
                 color="primary"
                 class="ml-2"
                 v-bind="attrs"
@@ -71,7 +70,7 @@
 
           <v-spacer></v-spacer>
 
-          <span class="mr-4 grey--text">
+          <span class="mr-4 black--text">
             Page {{ page }} of {{ numberOfPages }}
           </span>
           <v-btn
