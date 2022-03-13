@@ -11,7 +11,7 @@
       <template v-slot:header>
         <v-toolbar color="primary lighten-1" dark flat>
           <v-row>
-            <v-col cols="4" sm="6" md="4" lg="3">
+            <v-col cols="12" xs="12" sm="9" md="6" lg="3">
               <v-text-field
                 v-model="search"
                 clearable

@@ -4,6 +4,18 @@
       <v-col cols="4" xs="0" sm="0" md="1" lg="2" />
       <v-col cols="12" xs="12" sm="12" md="10" lg="8">
         <v-row>
+          <v-col cols="12" xs="12" sm="12" md="12" lg="12" class="px-4" align="end" justify="end">
+            <v-btn
+            dark
+            color="primary"
+            class="mr-1"
+            @click="goBack"
+            small
+          > 
+            <v-icon left>mdi-chevron-left</v-icon>
+            Go Back
+          </v-btn>
+          </v-col>
           <v-col cols="12" xs="12" sm="12" md="8" lg="8" class="px-4">
             <CustomCarousel :items="product.images" />
           </v-col>
@@ -103,6 +115,9 @@ export default {
     getProduct() {
       this.product = this.getProductDetail(this.$route.params.id);
     },
+    goBack() {
+      this.$router.push('/');
+    }
   },
 };
 </script>
