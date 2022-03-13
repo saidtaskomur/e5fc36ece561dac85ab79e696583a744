@@ -5,9 +5,7 @@
       <v-col cols="12" xs="12" sm="12" md="10" lg="8">
         <v-row>
           <v-col cols="12" xs="12" sm="12" md="8" lg="8" class="px-4">
-            <CustomCarousel 
-              :items="product.images"
-            />
+            <CustomCarousel :items="product.images" />
           </v-col>
           <v-col cols="12" xs="12" sm="12" md="4" lg="4" class="px-4">
             <v-row>
@@ -66,8 +64,8 @@
 
 <script>
 import { mapActions, mapState, mapGetters } from "vuex";
-import CustomChip from '../../components/CustomChip'
-import CustomCarousel from '../../components/CustomCarousel'
+import CustomChip from "../../components/CustomChip";
+import CustomCarousel from "../../components/CustomCarousel";
 export default {
   name: "ProductDetail",
   components: {
@@ -89,8 +87,7 @@ export default {
       getProductDetail: "getProductDetail",
     }),
   },
-
-  mounted() {
+  created() {
     if (!this.products.length) {
       this.fetchProducts().then(() => {
         this.getProduct();
